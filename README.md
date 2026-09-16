@@ -72,4 +72,4 @@ node tools/prerender.mjs && git add -A && git commit -m "Cập nhật nội dung
 
 ⚠️ **Giữ nguyên bản ghi MX** (`pro206.emailserver.vn`) và TXT, nếu xoá là mất email công ty. Sau khi DNS trỏ đúng, GitHub tự cấp chứng chỉ SSL miễn phí (vài phút tới 1 giờ), rồi bật **Enforce HTTPS** trong Settings → Pages.
 
-**Tự động prerender khi đăng từ Admin:** file `.github/workflows/prerender.yml` có sẵn trong thư mục local nhưng **chưa đẩy lên GitHub** (token thiếu quyền `workflow`). Muốn bật, chạy `gh auth refresh -h github.com -s workflow` rồi commit file đó lên. Không có nó, nhớ chạy `node tools/prerender.mjs` trước mỗi lần push.
+**Tự động prerender:** `.github/workflows/prerender.yml` đã chạy trên GitHub. Khi Admin đẩy `data.js` lên repo, workflow tự sinh lại `/du-an/*.html` và `sitemap.xml` rồi commit ngược. Sửa nội dung từ máy thì vẫn nên chạy `node tools/prerender.mjs` trước khi push cho nhanh.
