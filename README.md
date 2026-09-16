@@ -54,4 +54,22 @@ node tools/prerender.mjs
 
 ## 6. Deploy
 
-Repo GitHub + hosting auto-deploy từ Git (Tinh Gọn/Mắt Bão hoặc Netlify/Vercel). `.dockerignore` đã loại `docs/`, `tools/`, `.git` để build nhẹ. Trỏ tên miền `onescorp.vn` về hosting sau khi site chạy.
+**Đang chạy trên GitHub Pages**, repo [khaibaodai/ones-website](https://github.com/khaibaodai/ones-website), nhánh `main`, thư mục gốc. Đẩy commit lên `main` là site tự cập nhật sau khoảng 1 phút.
+
+```bash
+node tools/prerender.mjs && git add -A && git commit -m "Cập nhật nội dung" && git push
+```
+
+**Tên miền:** GitHub Pages đã nhận `onescorp.vn` (file `CNAME`). Để site chạy thật, DNS tại **Mắt Bão** (ns1/ns2.matbao.vn) cần:
+
+| Loại | Tên | Giá trị |
+|------|-----|---------|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `khaibaodai.github.io` |
+
+⚠️ **Giữ nguyên bản ghi MX** (`pro206.emailserver.vn`) và TXT, nếu xoá là mất email công ty. Sau khi DNS trỏ đúng, GitHub tự cấp chứng chỉ SSL miễn phí (vài phút tới 1 giờ), rồi bật **Enforce HTTPS** trong Settings → Pages.
+
+**Tự động prerender khi đăng từ Admin:** file `.github/workflows/prerender.yml` có sẵn trong thư mục local nhưng **chưa đẩy lên GitHub** (token thiếu quyền `workflow`). Muốn bật, chạy `gh auth refresh -h github.com -s workflow` rồi commit file đó lên. Không có nó, nhớ chạy `node tools/prerender.mjs` trước mỗi lần push.
