@@ -1,0 +1,20 @@
+# .dockerignore — chỉ đóng gói file web tĩnh vào image nginx.
+# Loại thư mục lịch sử git (nguyên nhân build context nặng khiến COPY rớt)
+# và các file dev không cần khi chạy web.
+
+.git
+.github
+.gitignore
+.claude
+.impeccable
+.netlify
+.mcp.json
+
+docs
+tools
+node_modules
+
+
+*.md
+*.zip
+netlify.toml

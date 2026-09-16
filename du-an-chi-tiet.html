@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chi tiết dự án — OneS</title>
+<meta name="description" content="Thông tin chi tiết dự án trong giỏ hàng OneS: vị trí, chủ đầu tư, quy mô, loại hình sản phẩm, thẻ sản phẩm và chính sách dành cho đối tác.">
+<link rel="icon" href="/assets/img/icon.png">
+<link rel="apple-touch-icon" href="/assets/img/icon.png">
+<link rel="stylesheet" href="/assets/css/styles.css?v=5">
+<link rel="canonical" href="https://onescorp.vn/du-an-chi-tiet.html">
+<meta name="author" content="OneS Corporation">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#214E7F">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OneS Corporation">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Chi tiết dự án — OneS">
+<meta property="og:description" content="Thông tin chi tiết dự án trong giỏ hàng OneS dành cho đối tác và cộng tác viên.">
+<meta property="og:url" content="https://onescorp.vn/du-an-chi-tiet.html">
+<meta property="og:image" content="https://onescorp.vn/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chi tiết dự án — OneS">
+<meta name="twitter:image" content="https://onescorp.vn/assets/img/og-image.jpg">
+<script type="application/ld+json" id="pl-ld-org">{"@context":"https://schema.org","@type":"RealEstateAgent","@id":"https://onescorp.vn/#organization","name":"OneS Corporation","alternateName":"OneS","legalName":"Công ty Cổ phần Đầu tư và Dịch vụ OneS","taxID":"0318749376","foundingDate":"2024","slogan":"Kiến tạo giá trị thịnh vượng","description":"Công ty công nghệ trong lĩnh vực bất động sản cao cấp tại TP.HCM — cung cấp nguồn sản phẩm từ các chủ đầu tư uy tín (Vinhomes, Masterise Homes, Đất Xanh Group, Keppel Land, Gamuda Land, Lotte…) và nền tảng hỗ trợ bán hàng cho đối tác, cộng tác viên với chính sách doanh thu chia sẻ 70–86%.","url":"https://onescorp.vn/","logo":"https://onescorp.vn/assets/img/logo.png","image":"https://onescorp.vn/assets/img/og-image.jpg","telephone":"+84903983737","email":"onescorporation.info@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Tầng 3, số 74 - 76, Đường N3C, Khu đô thị Sài Gòn Bình An (Soho – The Global City), Khu phố 14","addressLocality":"Phường Bình Trưng","addressRegion":"TP. Hồ Chí Minh","addressCountry":"VN"},"areaServed":["TP. Hồ Chí Minh","Bình Dương","Đồng Nai","Long An","Khánh Hòa"],"sameAs":["https://www.facebook.com/onescorp.vn","https://www.youtube.com/@OneSCorporation","https://www.tiktok.com/@onescorporation","https://zalo.me/4321344812365733664"],"priceRange":"$$"}</script>
+</head>
+<body>
+<div id="header-root"></div>
+
+<main id="projectDetail">
+  <section class="page-hero section--ivory" style="padding-bottom:0">
+    <div class="container">
+      <nav class="breadcrumb reveal" aria-label="breadcrumb">
+        <a href="/index.html">Trang chủ</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <a href="/du-an.html">Dự án</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <span id="pdBreadcrumb">Dự án</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section--tight section--ivory" style="padding-top:clamp(20px,3vw,32px)">
+    <div class="container">
+      <div class="gallery reveal" id="pdGallery"></div>
+
+      <div class="detail-grid">
+        <div>
+          <div class="flex wrap reveal" style="gap:.5rem;margin-bottom:1rem" id="pdTags"></div>
+          <h1 class="reveal" id="pdTitle" style="font-size:clamp(2rem,4vw,3rem)">Dự án</h1>
+          <div class="pcard__loc reveal" id="pdLoc" style="margin-top:.8rem;font-size:.95rem"></div>
+          <p class="lead reveal mt-2" id="pdShort"></p>
+
+          <div class="spec-grid reveal" id="pdSpecs"></div>
+
+          <div class="reveal">
+            <span class="eyebrow">Tổng quan</span>
+            <div class="mt-1" id="pdDesc" style="color:var(--ink-soft)"></div>
+          </div>
+
+          <div class="reveal mt-3" id="pdAmenitiesWrap">
+            <span class="eyebrow gold">Tiện ích nổi bật</span>
+            <ul class="amenities mt-1" id="pdAmenities"></ul>
+          </div>
+
+          <div class="reveal mt-3" id="pdZonesWrap" hidden>
+            <span class="eyebrow">Các phân khu</span>
+            <div class="mt-1" id="pdZones" style="display:grid;gap:.7rem"></div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="sticky-cta reveal">
+            <div class="eyebrow">Mức giá tham khảo</div>
+            <div class="price mt-1" id="pdPrice"></div>
+            <div class="mt-2"><a id="pdCardBtn" class="doc-btn" href="#" target="_blank" rel="noopener" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Tải thẻ sản phẩm OneS</a></div>
+            <hr class="divider" style="margin-block:1.2rem">
+            <p class="text-muted" style="font-size:.86rem;margin-bottom:1rem">Đối tác / cộng tác viên để lại thông tin — OneS gửi giỏ hàng, bảng giá và chính sách bán hàng của dự án này.</p>
+            <form data-pace-form>
+              <input type="hidden" name="project" id="pdProjectField">
+              <input type="hidden" name="loai" value="Nhận giỏ hàng dự án">
+              <div class="field-row">
+                <div class="form-field"><label>Họ và tên</label><input name="name" required placeholder="Nguyễn Văn A"></div>
+              </div>
+              <div class="field-row">
+                <div class="form-field"><label>Số điện thoại</label><input name="phone" type="tel" required placeholder="09xx xxx xxx"></div>
+              </div>
+              <div class="field-row">
+                <div class="form-field"><label>Nhu cầu</label><textarea name="message" placeholder="Tôi cần giỏ hàng và chính sách đợt mới nhất…"></textarea></div>
+              </div>
+              <button class="btn btn--block" type="submit">Nhận giỏ hàng &amp; chính sách
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+              <div class="form-success mt-2">Cảm ơn bạn! Đội ngũ OneS sẽ liên hệ và gửi tài liệu trong thời gian sớm nhất.</div>
+            </form>
+            <div class="flex items-center" style="gap:.6rem;margin-top:1rem;justify-content:center">
+              <a class="link-arrow" href="tel:0903983737" style="font-size:.74rem">Gọi ngay 0903 983 737</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Giỏ hàng OneS</span>
+        <h2 class="section-title">Dự án liên quan</h2>
+      </div>
+      <div class="card-grid" id="pdRelated"></div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-root"></div>
+
+<script src="/assets/js/data.js?v=3"></script>
+<script src="/assets/js/components.js?v=3"></script>
+<script src="/assets/js/main.js?v=3"></script>
+</body>
+</html>

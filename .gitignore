@@ -1,0 +1,7 @@
+node_modules/
+.impeccable/
+.netlify/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
